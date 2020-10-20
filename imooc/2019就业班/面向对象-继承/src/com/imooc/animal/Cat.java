@@ -40,13 +40,18 @@ public class Cat extends Animal {
 
     public Cat(String name, int month){
 //        super(name, month);
-        this(); // 调用当前无参构造函数
+//        this(); // 调用当前无参构造函数
         // 子类构造默认调用的是父类的无参构造
         System.out.println("Cat带参构造");
     }
 
-    public static void main(String[] args) {
-        Animal a1 = new Animal();
-        System.out.println("Cat主函数");
+//    public static void main(String[] args) {
+//        Animal a1 = new Animal();
+//        System.out.println("Cat主函数");
+//    }
+
+    @Override // 源码注解 标识重写父类方法
+    public void eat() {
+        super.eat();
     }
 }

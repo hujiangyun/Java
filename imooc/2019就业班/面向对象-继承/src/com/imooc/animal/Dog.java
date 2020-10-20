@@ -33,4 +33,9 @@ public class Dog extends Animal {
 
     public Dog() {
     }
+
+    @Override
+    public Dog create() {
+        return new Dog();
+    }
 }
