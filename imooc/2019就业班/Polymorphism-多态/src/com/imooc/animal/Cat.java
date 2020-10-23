@@ -34,4 +34,8 @@ public class Cat extends Animal {
     public void eat() {
         System.out.println("猫猫爱吃鱼");
     }
+
+    public void playBall(){
+        System.out.println("猫玩毛线球了");
+    }
 }

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45277266-ba03-499a-a6f6-7a04de8be743" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/imooc/test/demo03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/imooc/animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/imooc/animal/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/imooc/animal/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/imooc/animal/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/imooc/animal/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/imooc/animal/Dog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +138,8 @@
       <workItem from="1603070771961" duration="15780000" />
       <workItem from="1603156890068" duration="590000" />
       <workItem from="1603158674578" duration="7857000" />
+      <workItem from="1603417584389" duration="24000" />
+      <workItem from="1603417637363" duration="79000" />
     </task>
     <servers />
   </component>

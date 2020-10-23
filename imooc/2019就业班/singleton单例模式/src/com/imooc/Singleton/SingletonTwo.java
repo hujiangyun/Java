@@ -4,7 +4,7 @@ package com.imooc.Singleton;
  * @author hjy
  * @create 2020/10/20 3:41 下午
  */
-//单例模式:懒汉式，在初始化类式不会创建实例对象，只有在调用gei方法时才会创建实例对象  时间换空间
+//单例模式:懒汉式，在初始化类式不会创建实例对象，只有在调用get方法时才会创建实例对象  时间换空间
 public class SingletonTwo {
 //    1、创建私有构造
     private SingletonTwo(){
