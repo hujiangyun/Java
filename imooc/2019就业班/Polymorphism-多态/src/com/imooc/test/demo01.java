@@ -13,10 +13,10 @@ public class demo01 {
         /*
          * 向上转型, 父类引用指向子类对象
          * */
-        Animal a1 = new Animal(); // 1
+//        Animal a1 = new Animal(); // 1
         Animal c1 = new Cat();    // 2
         Animal d1 = new Dog(); // 3
-        a1.eat();
+//        a1.eat();
         c1.eat();
         d1.eat();
         System.out.println("============================");

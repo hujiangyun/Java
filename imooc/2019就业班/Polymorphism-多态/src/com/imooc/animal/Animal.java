@@ -4,7 +4,7 @@ package com.imooc.animal;
  * @author hjy
  * @create 2020/10/20 4:06 下午
  */
-public class Animal {
+public abstract class Animal {
     // 属性：年龄，昵称
     private String name;
     private int month;
@@ -33,8 +33,11 @@ public class Animal {
         this.month = month;
     }
 
+    // 抽象方法：吃东西，不允许有方法体，规定子类必须要重写该方法
+    public abstract void eat();
+
     // 方法：吃东西
-    public void eat() {
-        System.out.println("所有动物都有吃东西的能力");
-    }
+//    public void eat() {
+//        System.out.println("所有动物都有吃东西的能力");
+//    }
 }

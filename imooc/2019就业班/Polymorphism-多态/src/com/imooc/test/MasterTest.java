@@ -15,5 +15,6 @@ public class MasterTest {
         Dog d1 = new Dog();
         m1.feed(c1);
         m1.feed(d1);
+//        c1.eat("沙子");
     }
 }

@@ -29,11 +29,16 @@ public class Cat extends Animal {
         System.out.println(this.getName() + "跑起来了");
     }
 
-    // 方法：重写父类方法
+//     方法：重写父类方法
     @Override
     public void eat() {
         System.out.println("猫猫爱吃鱼");
     }
+
+//    // 方法重载
+//    public void eat(String food) {
+//        System.out.println("猫猫爱吃" + food);
+//    }
 
     public void playBall(){
         System.out.println("猫玩毛线球了");
