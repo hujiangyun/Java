@@ -12,4 +12,9 @@ public class ThirdPhone extends SecondPhone {
     public void music() {
         System.out.println("手机可以听音乐");
     }
+
+    public void connection(){
+        System.out.println("我是三代手机connection");
+    }
+
 }
