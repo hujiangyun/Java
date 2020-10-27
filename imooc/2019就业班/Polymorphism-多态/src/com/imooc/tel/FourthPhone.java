@@ -23,6 +23,8 @@ public class FourthPhone extends ThirdPhone implements INet,IPhoto {
 
     @Override
     public void photo() {
+        INet.super.connection();
+        INet.stop();
         System.out.println("手机可以自拍");
     }
 }
