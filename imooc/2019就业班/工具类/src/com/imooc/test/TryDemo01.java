@@ -29,10 +29,13 @@ public class TryDemo01 {
             System.out.println("两数之商为：" + (n1 / n2));
         } catch (ArithmeticException e) { // ArithmeticException算数异常
             System.out.println("除数不能为0");
+            System.exit(1);
             e.printStackTrace(); // 输出异常信息
         } catch (InputMismatchException e) { // InputMismatchException 输入异常（输入不匹配）
             System.out.println("请输入整数");
             e.printStackTrace(); // 输出异常信息
+        } catch(Exception e){
+            System.out.println("出错了");
         } finally {
             System.out.println("============运算结束============");
         }
