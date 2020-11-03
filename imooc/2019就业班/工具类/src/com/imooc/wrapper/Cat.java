@@ -1,4 +1,4 @@
-package com.imooc.Wrap;
+package com.imooc.wrapper;
 
 /**
  * @author hjy

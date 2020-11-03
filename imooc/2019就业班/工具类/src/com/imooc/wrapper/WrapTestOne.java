@@ -1,6 +1,4 @@
-package com.imooc.Wrap;
-
-import java.sql.SQLOutput;
+package com.imooc.wrapper;
 
 /**
  * @author hjy
