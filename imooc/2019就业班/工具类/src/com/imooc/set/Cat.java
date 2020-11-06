@@ -56,7 +56,7 @@ public class Cat {
                 Objects.equals(species, cat.species);
     }
 
-    @Override
+//    @Override
     public int hashCode() {
         return Objects.hash(name, month, species);
     }

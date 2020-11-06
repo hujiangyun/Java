@@ -53,11 +53,11 @@ public class CatTest {
 //            System.out.println(c1);
 //        }
 
-        Set set = new HashSet();
+        Set<Cat> set = new HashSet<Cat>();
         set.add(c1);
         set.add(c2);
-        Iterator it = set.iterator();
-        while (it.hasNext()){
+        Iterator<Cat> it = set.iterator();
+        while (it.hasNext()) {
             System.out.println(it.next());
         }
 
@@ -80,19 +80,59 @@ public class CatTest {
         it = set.iterator();
         boolean flag = false;
         Cat c = null;
-        while(it.hasNext()){
-            c = (Cat)it.next();
-            if(c.getName().equals("花花")){
+        while (it.hasNext()) {
+            c = it.next();
+            if (c.getName().equals("花花")) {
                 flag = true; // 找到了
                 break;
             }
         }
-        if(flag == true){
+        if (flag) {
             System.out.println("花花找到了");
             System.out.println(c);
         } else {
             System.out.println("花花没找到");
         }
 
+        // 删除花花二代的数据并输出
+        it = set.iterator();
+//        for (Cat cat : set) {
+//            if (cat.getName().equals("花花二代")) {
+//                set.remove(cat);
+//                break; // 删除之后跳出循环，防止报错
+//            }
+//        }
+//        Set <Cat> removeCats = new HashSet<Cat>();
+//        for (Cat cat : set) {
+//            if (cat.getMonth() < 8) {
+////                set.remove(cat);
+//                removeCats.add(cat);
+//            }
+//        }
+
+//        set.removeIf(cat -> cat.getMonth() >= 8);
+
+//        set.removeAll(removeCats);
+//        while (it.hasNext()) {
+//            Cat cat = it.next();
+//            if (cat.getName().equals("花花二代")) {
+//                it.remove();
+//            }
+//        }
+
+        System.out.println("******************");
+        System.out.println("删除花花二代后的数据：");
+        for (Cat _c : set) {
+            System.out.println(_c);
+        }
+
+        // 删除所有宠物猫信息
+//        System.out.println("******************");
+//        boolean _flag = set.removeAll(set);
+//        if (set.isEmpty()) {
+//            System.out.println("猫都不见了。。。。。。。");
+//        } else {
+//            System.out.println("猫还在");
+//        }
     }
 }
