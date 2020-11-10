@@ -1,6 +1,6 @@
-package com.imooc.sleep;
+package com.imooc.multithreading;
 
-class MyThread implements Runnable {
+class MyThreadTwo extends Thread {
     @Override
     public void run() {
         int i = 0;
@@ -18,7 +18,7 @@ class MyThread implements Runnable {
 
 public class SleepDemo {
     public static void main(String[] args) {
-        MyThread pr = new MyThread();
+        MyThreadTwo pr = new MyThreadTwo();
         Thread t1 = new Thread(pr);
         t1.start();
         Thread t2 = new Thread(pr);

@@ -1,4 +1,4 @@
-package com.imooc.runnable;
+package com.imooc.multithreading;
 
 class PrintRunnable implements Runnable {
     @Override
@@ -11,7 +11,7 @@ class PrintRunnable implements Runnable {
     }
 }
 
-public class Test {
+public class RunnableTest {
     public static void main(String[] args) {
         PrintRunnable pr = new PrintRunnable();
         Thread t1 = new Thread(pr);

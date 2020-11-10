@@ -1,23 +1,22 @@
 package com.imooc.multithreading;
 
-/**
- * @author hjy
- * @create 2020/11/9 4:55 下午
- */
+class MyThread extends Thread {
+    public MyThread(String name) {
+        super(name);
+    }
 
-// Thread子类创建线程
-class MyThread extends Thread{
-    public void run(){
-        System.out.println(getName() + "该线程正在进行！");
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(getName() + "正在运行" + i + "次");
+        }
     }
 }
 
 public class ThreadTest {
     public static void main(String[] args) {
-        System.out.println("主线程1：");
-        MyThread mt = new MyThread();
-        mt.start(); // 启动线程
-        mt.start(); // 启动线程
-        System.out.println("主线程2：");
+        MyThread mt1 = new MyThread("线程1");
+        MyThread mt2 = new MyThread("线程2");
+        mt1.start();
+        mt2.start();
     }
 }
